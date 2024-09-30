@@ -53,3 +53,4 @@ def update_product(JSON_data):
 
     with open(JSON_data, "w") as file:
         json.dump(data, file, indent=2)
+        # for push

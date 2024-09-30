@@ -70,3 +70,4 @@ def add_product_in_stock(JSON_data):
                 int(input("Enter quantity: "))
             )
             break
+        # for push

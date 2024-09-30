@@ -20,3 +20,4 @@ def checking_product_information(JSON_data):
                 if product["product"]["name"]==product_name:
                     print(f"product found: \n{product}")
                     return
+                # for push
