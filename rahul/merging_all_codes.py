@@ -1,5 +1,9 @@
 import time,sys
+
 # sys.path.append(r"C:\invantary_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
+
+sys.path.append(r"R:\inventory_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
+
 JSON_data = r"stock.json"
 
 import Adding_product_information
