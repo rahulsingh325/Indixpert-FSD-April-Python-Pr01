@@ -1,12 +1,14 @@
 import time,sys
-sys.path.append(r"C:\invantary_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
+# sys.path.append(r"C:\invantary_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
 JSON_data = r"stock.json"
 
 import Adding_product_information
 import update_stock_level
 import checking_stock_level
 
-def main_menu():    
+def main_menu(user_name, user_id):  
+    user_file = f"{user_name}'s_stock_{user_id}.json"
+    json_data = r"inventory_data\ " + user_file
     while True:
         print("\n1. Add a new product")
         print("2. Update the stock level")
