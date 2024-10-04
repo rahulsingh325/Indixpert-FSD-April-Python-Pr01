@@ -1,5 +1,5 @@
 import json,sys,time
-sys.path.append(r"C:\invantary_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
+sys.path.append(r"R:\inventory_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
 import uuid
 import re # Import the re module for regular expressions 
 import merging_all_codes
