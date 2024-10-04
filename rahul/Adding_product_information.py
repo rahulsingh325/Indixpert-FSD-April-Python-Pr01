@@ -1,5 +1,5 @@
 import json
-import os
+import os 
 
 def add_product_in_stock(JSON_data):
     class Inventory:

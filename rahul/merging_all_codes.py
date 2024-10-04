@@ -6,7 +6,7 @@ import time,sys
 
 # sys.path.append(r"C:\invantary_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
 
-sys.path.append(r"R:\inventory_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
+sys.path.append(r"R:\inventory_management_system\Indixpert-FSD-April-Python-Pr01\rahul")  
 
 JSON_data = r"stock.json"
 >>>>>>> b862e1e779bfcb104cc75846df68cc9348a68072
@@ -14,6 +14,7 @@ JSON_data = r"stock.json"
 import Adding_product_information
 import update_stock_level
 import checking_stock_level
+
 
 def main_menu(user_name, user_id):  
     user_file = f"{user_name}'s_stock_{user_id}.json"

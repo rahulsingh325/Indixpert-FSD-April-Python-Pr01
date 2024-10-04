@@ -1,5 +1,5 @@
 import os,json
-
+ 
 def checking_product_information(JSON_data):
     if not os.path.exists(JSON_data):
         print("Sorry! Database file does not exist.")       

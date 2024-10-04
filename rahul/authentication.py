@@ -7,7 +7,7 @@ import merging_all_codes
 user_login_data = r"user_data.json"
 
 def save_user_data(data):
-    try:
+    try: 
         with open(user_login_data, 'r') as file:
             users = json.load(file)
     except FileNotFoundError:
