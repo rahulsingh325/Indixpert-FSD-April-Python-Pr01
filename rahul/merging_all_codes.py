@@ -1,5 +1,15 @@
+<<<<<<< HEAD
 import time,sys,os
 
+=======
+import time,sys
+
+# sys.path.append(r"C:\invantary_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
+
+sys.path.append(r"R:\inventory_management_system\Indixpert-FSD-April-Python-Pr01\rahul")
+
+JSON_data = r"stock.json"
+>>>>>>> b862e1e779bfcb104cc75846df68cc9348a68072
 
 import Adding_product_information
 import update_stock_level
