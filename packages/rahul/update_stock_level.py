@@ -19,14 +19,14 @@ def update_product(JSON_data):
     else:
 
         print("To exit, enter '0' as the product ID.")
-        product_id_input = input("Enter product id which you want to update: ")
+        product_id_input = input("Enter product id which you want to update: ").strip()
 
         if product_id_input == '0':
             
             return
 
         try:
-            product_id = int(product_id_input)
+            product_id = product_id_input.upper()
         except ValueError:
             print("Invalid input. Please enter a valid product ID.")
             return
@@ -41,8 +41,8 @@ def update_product(JSON_data):
 
                     try:
                         qty_to_update = int(input("Enter the quantity to update: "))
-                        product["product"]["quantity"] += qty_to_update
-                        # Removed lines for restore and sell functionality
+                        product["product"]["quantity"] +=- qty_to_update
+                        
                         print(f"{qty_to_update} units added to product ID {product_id}. New quantity: {product['product']['quantity']}")
                     except ValueError:
                         print("Invalid input. Quantity should be a number.")
@@ -53,4 +53,4 @@ def update_product(JSON_data):
 
     with open(JSON_data, "w") as file:
         json.dump(data, file, indent=2)
-        # for push
+        

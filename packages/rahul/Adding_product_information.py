@@ -43,31 +43,28 @@ def add_product_in_stock(JSON_data):
                 except json.JSONDecodeError:
                     list_data = []
         else:
-            print("You don't have database file, we are creating new json file (stock.json)")
-            print("Creating",end="")            
+            print("You are new user ")
+            print("Creating database file",end="")            
             print("\n")
 
             list_data = []
 
-        product_id = int(input("Enter Product ID: "))
-        product_exists = any(product["product_id"] == product_id for product in list_data)
+        count_data_file= 1      
+        systm_genarate_id = count_data_file+1
+        product_id = "PD0"+ str(systm_genarate_id)
 
-        if product_exists:
-            print(f"Error: Product ID {product_id} already exists. Please enter a different product ID.")
-        else:
-            while True:
-                product_name = input("Enter Product Name: ").strip()
-                product_name_exists = any(product["product"]["name"].lower() == product_name.lower() for product in list_data)
+        while True:
+            product_name = input("Enter Product Name: ").strip()
+            product_name_exists = any(product["product"]["name"].lower() == product_name.lower() for product in list_data)
 
-                if product_name_exists:
-                    print(f"Error: Product name '{product_name}' already exists. Please enter a different product name.")
-                else:
-                    break 
-            stock.add_product(
-                product_id,
-                product_name,
-                int(input("Enter total price: ")),
-                int(input("Enter quantity: "))
-            )
-            break
-        # for push
+            if product_name_exists:
+                print(f"Error: Product name '{product_name}' already exists. Please enter a different product name.")
+            else:
+                break 
+        stock.add_product(
+            product_id,
+            product_name,
+            int(input("Enter per item price: ")),
+            int(input("Enter quantity: "))
+        )
+        break 
